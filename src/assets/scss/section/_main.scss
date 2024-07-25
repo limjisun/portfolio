@@ -1,0 +1,121 @@
+main{
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    counter-reset: section 0;
+
+    &.fillHeight {
+        padding: 0 150px;
+  
+        @media (max-width: 1080px) {
+          padding: 0 100px;
+        }
+        @media (max-width: 768px) {
+          padding: 0 50px;
+        }
+        @media (max-width: 480px) {
+          padding: 0 25px;
+        }
+      }
+}
+
+
+.left{
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: var(--light-slate);
+
+  @media (max-width: 768px){
+    display: none;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li{
+
+      a{
+        padding: 10px;
+
+        &:hover,
+        &:focus {
+          transform: translateY(-3px);
+        }
+
+        svg{
+          width: 20px;
+          height: 20px;
+          &.feather{
+            fill: none;
+          }
+        }
+      }
+      &:last-child::after{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: var(--light-slate);
+      }
+    }
+
+  }
+
+ 
+
+}
+
+
+.right{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+
+    @media (max-width: 768px){
+      display: none;
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: var(--light-slate);
+    }
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+
+    a{
+      margin: 20px auto;
+      padding: 10px;
+      font-family: var(--font-mono);
+      font-size: var(--fz-xxs);
+      line-height: var(--fz-lg);
+      letter-spacing: 0.1em;
+      -webkit-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+    }
+}

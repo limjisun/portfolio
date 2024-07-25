@@ -1,0 +1,112 @@
+#about{
+  max-width: 900px;
+    .inner{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 100px;
+
+        @media (max-width: 768px) {
+          display: block;
+        }
+    }
+  }
+    .skills-list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        gap: 0px 10px;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        overflow: hidden;
+        list-style: none;
+
+        li{
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-family: var(--font-mono);
+            font-size: var(--fz-xs);
+
+            &::before{
+                content: "▹";
+                position: absolute;
+                left: 0px;
+                color: var(--green);
+                font-size: var(--fz-sm);
+                line-height: 12px;
+            }
+        }
+    }
+
+    .about_img{
+        position: relative;
+        max-width: 160px;
+
+        @media (max-width: 768px) {
+          margin: 50px auto 0;
+          width: 70%;
+        }
+
+        .wrapper{
+            box-shadow: 0 10px 30px -15px var(--navy-shadow);
+            transition: var(--transition);
+            display: block;
+            position: relative;
+            width: 100%;
+            border-radius: var(--border-radius);
+            background-color: var(--green);
+            
+            &:hover,
+            &:focus {
+              outline: 0;
+              transform: translate(-4px, -4px);
+        
+              &:after {
+                transform: translate(8px, 8px);
+              }
+        
+              img {
+                filter: none;
+                mix-blend-mode: normal;
+              }
+            }
+        
+
+            img {
+                position: relative;
+                border-radius: var(--border-radius);
+                mix-blend-mode: multiply;
+                filter: grayscale(100%) contrast(1);
+                transition: var(--transition);
+              }
+
+              &:before,
+              &:after {
+              content: '';
+              display: block;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              border-radius: var(--border-radius);
+              transition: var(--transition);
+              }
+      
+              &:before {
+              top: 0;
+              left: 0;
+              background-color: var(--navy);
+              mix-blend-mode: screen;
+              }
+      
+              &:after {
+              border: 2px solid var(--green);
+              top: 14px;
+              left: 14px;
+              z-index: -1;
+              }
+        }
+
+
+        
+    }
+
+
