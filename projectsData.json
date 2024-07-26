@@ -1,0 +1,46 @@
+[
+    {
+      "title": "면세점 이벤트 LIST",
+      "url": "http://ljs131.dothome.co.kr/ip/index.html",
+      "description":"이 프로젝트는 롯데면세점의 다양한 프로모션 이벤트를 모아놓은 리스트입니다. 각 이벤트 페이지는 사용자 유입을 극대화하고 재미를 더하기 위해 다양한 애니메이션 효과와 인터랙티브 디자인을 적용하여 제작되었습니다. 매력적인 시각적 요소와 직관적인 사용자 경험을 통해 롯데면세점의 프로모션을 더욱 효과적으로 즐길 수 있습니다.",
+      "skill": [
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "image": "/assets/img/dflist.jpg"
+    },
+    {
+      "title": "인터랙티브 효과 컬렉션 LIST",
+      "url": "http://ljs131.dothome.co.kr/htdocs/www-static/prototype/index.html",
+      "description":"다양한 웹사이트를 돌아다니며 발견한 신기하고 자주 사용되는 애니메이션 및 인터랙티브 효과를 모아놓은 컬렉션입니다. 각 효과는 사용자 경험을 향상시키고, 웹 페이지의 시각적 매력을 높이기 위해 선별되었습니다. 이 리스트를 통해 웹 디자이너와 개발자는 최신 트렌드와 영감을 얻어 효과적인 웹 인터페이스를 구현할 수 있습니다",
+      "skill": [
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "image": "/assets/img/list.jpg"
+    },
+    {
+      "title": "사내 홈페이지 개선 프로젝트",
+      "url": "https://www.nexus.co.kr/",
+      "description":"사내 홈페이지를 전면적으로 개선하여, 현대적이고 반응형 웹 디자인을 구현하였습니다. 메인 페이지에는 생동감 넘치는 동영상을 슬라이드 형태로 삽입하여, 시각적 매력을 극대화하였습니다. 이 프로젝트를 통해 사용자 경험을 향상시키고, 모든 디바이스에서 최적화된 웹 접근성을 제공하게 되었습니다.",
+      "skill": [
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+      "image": "/assets/img/nexus.jpg"
+    },
+    {
+      "title": "콜센터 솔루션 리빌딩 프로젝트",
+      "url": "http://ljs131.dothome.co.kr/nexus/call-agent/",
+      "description":"현재 회사에서 제공하는 콜센터 솔루션의 리빌딩을 담당하여 퍼블리싱 작업을 완수하였습니다. 사용자 경험을 극대화하기 위해 직관적인 인터페이스를 설계하고, 컴포넌트 기반 구조로 구현하여 재사용성을 높였습니다. 이 프로젝트를 통해 효율성과 사용 편의성을 동시에 향상시켰습니다.",
+      "skill": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "image": "/assets/img/call.jpg"
+    }
+  ]
