@@ -15,7 +15,7 @@ const Projects = () => {
   }, [projectData]); // Depend on projectData to ensure refs are set
 
   useEffect(() => {
-    fetch('/projectsData.json')
+    fetch(`${process.env.PUBLIC_URL}/projectsData.json`)
       .then(response => response.json())
       .then(data => setProjectData(data))
       .catch(error => console.error('Error loading projects data:', error));
@@ -57,7 +57,7 @@ const Projects = () => {
             </div>
             <div className="project-image">
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <img src={project.image} alt="" />
+                <img src={`${process.env.PUBLIC_URL}${project.image}`}  alt="" />
               </a>
             </div>
           </li>

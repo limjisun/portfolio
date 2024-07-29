@@ -4,7 +4,7 @@ import HomeView from "./views/HomeView.jsx";
 
 const App = () => {
   return (
-    git push origin master  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
           <Route path="/" element={<HomeView />} />
       </Routes>

@@ -12,7 +12,7 @@ const Jobs = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
     useEffect(() => {
         // JSON 파일에서 데이터를 가져옵니다.
-        fetch('/jobsData.json')
+        fetch(`${process.env.PUBLIC_URL}/jobsData.json`)
           .then(response => response.json())
           .then(data => setJobsData(data))
           .catch(error => console.error('Error loading jobs data:', error));
